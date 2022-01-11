@@ -7,7 +7,7 @@ namespace Ylesanne4
     {
         static void Main(string[] args)
         {
-            string rootdirect = $@"C:\Users\monkey\samples\Kasutajakaust";
+            string rootdirect = $@"C:\Users\monkey\samples\week13";
             Console.WriteLine("What file would you like displayed?");
             string userFile = Console.ReadLine();
             string fileDirect = $@"{rootdirect}\{userFile}.txt";
@@ -16,7 +16,7 @@ namespace Ylesanne4
             if (exists)
             {
                 string[] dataFromFile = File.ReadAllLines(fileDirect);
-                if (userFile == "planets" || userFile == "stars")
+                if (userFile == "toyota" || userFile == "bmw" || userFile == "tesla")
                 {
                     foreach (string line in dataFromFile)
                     {
